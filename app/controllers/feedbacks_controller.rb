@@ -44,7 +44,7 @@ class FeedbacksController < ApplicationController
 
     respond_to do |format|
       if @feedback.save
-        format.html { redirect_to(@feedback, :notice => 'Feedback was successfully created.') }
+        format.html { render :action => 'thank_you', :notice => 'Feedback was successfully created.' }
         format.xml  { render :xml => @feedback, :status => :created, :location => @feedback }
       else
         format.html { render :action => "new" }
