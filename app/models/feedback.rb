@@ -3,7 +3,8 @@ class Feedback < ActiveRecord::Base
   validates_presence_of :name, :content, :rating
 
   # Define a contant for reuse purpose
-  RATING_VALUES = 1..5
+  RATING_VALUES = (1..5).to_a
+  # Convert range to array for better performance
 
   # Rating value must be in 1-5
   validates_inclusion_of :rating, 
