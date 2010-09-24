@@ -1,8 +1,10 @@
 == Project Setup
-
+cd customer_feedback
 gem install bundler
 bundle install
+rake db:migrate
 
 == Test-Driven-Development
-run 'autotest'
+rake db:test:prepare
+autotest
 
