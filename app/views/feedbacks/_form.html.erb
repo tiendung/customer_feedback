@@ -21,7 +21,10 @@
   </div>
   <div class="field">
     <%= f.label :rating %><br />
-    <%= f.select :rating, Feedback::RATING_VALUES, :prompt => '- Please Select -' %>
+    <%= 
+      # Use select box so that user can only choose value from 1-5
+      f.select :rating, Feedback::RATING_VALUES, :prompt => '- Please Select -' 
+    %>
   </div>
   <div class="actions">
     <%= f.submit %>
