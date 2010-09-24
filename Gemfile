@@ -12,6 +12,10 @@ group :test do
   gem 'rspec', '~> 2.0.0.beta.20'
   gem 'rspec-rails', '~> 2.0.0.beta.20'
 
+  # Use factory_girl and faker to speed up test data generation
+  gem 'factory_girl', '~> 1.3.2'
+  gem 'faker', '~> 0.3.1'
+  
   # Utilities to do Test-Driven-Development
   gem 'autotest', '~> 4.3.2', :require => nil
   gem 'autotest-growl', '~> 0.2.4', :require => nil
