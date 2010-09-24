@@ -1,0 +1,7 @@
+Average rating: <%= Feedback.average_rating %>
+<br />
+Number of feedbacks: <%= Feedback.count %>
+<br />
+Min rating: <%= Feedback.minimum(:rating) %>
+<br />
+Max rating: <%= Feedback.maximum(:rating) %>
