@@ -1,6 +1,8 @@
 CustomerFeedback::Application.routes.draw do
   resources :feedbacks
 
+  root :to => "feedbacks#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
